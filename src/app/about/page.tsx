@@ -35,7 +35,7 @@ export default function About() {
                 Hello, I'm Reid Blaine
               </h2>
               <p className="text-gray-600 dark:text-gray-300">
-                I'm a passionate software developer with a strong focus on creating elegant and efficient solutions. 
+                I&apos;m a passionate software developer with a strong focus on creating elegant and efficient solutions. 
                 With a background in computer science and years of experience in web development, I strive to build 
                 applications that not only look great but also provide exceptional user experiences.
               </p>
@@ -47,7 +47,7 @@ export default function About() {
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
                 My journey in software development began during my university years, where I discovered my passion 
-                for creating digital solutions. Since then, I've worked on various projects ranging from small 
+                for creating digital solutions. Since then, I&apos;ve worked on various projects ranging from small 
                 business websites to complex web applications, constantly learning and adapting to new technologies.
               </p>
             </div>

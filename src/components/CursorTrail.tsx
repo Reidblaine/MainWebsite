@@ -64,9 +64,8 @@ export default function CursorTrail() {
         document.body.appendChild(trail)
         trail.style.left = `${x}px`
         trail.style.top = `${y}px`
-        // Force reflow
-        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-        trail.offsetHeight
+        // Force reflow by reading offsetHeight
+        const _ = trail.offsetHeight
         requestAnimationFrame(() => {
           trail.style.opacity = '1'
           trail.style.transform = 'translate(-50%, -50%) scale(1)'
