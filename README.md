@@ -1,15 +1,93 @@
-# Ansh & Riley Full-Stack Template
+# Reid Blaine's Portfolio Website
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and TailwindCSS.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## Features
 
-You can also edit the Path's prompt template to be whatever you like!
+- 🎨 Modern and clean design
+- 🌙 Dark mode support
+- 📱 Fully responsive layout
+- ⚡ Fast and optimized performance
+- 🎭 Smooth animations with Framer Motion
+- 📄 Professional CV section
+- 👤 About Me section
+- 🧠 Projects showcase
+- 🔍 SEO optimized
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [next-themes](https://github.com/pacocoursey/next-themes) - Dark mode support
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Project Structure
+
+```
+src/
+├── app/                    # App router pages
+│   ├── page.tsx           # Home page
+│   ├── cv/                # CV page
+│   ├── about/             # About page
+│   └── projects/          # Projects page
+├── components/            # React components
+│   ├── Navigation.tsx     # Navigation bar
+│   └── ThemeToggle.tsx    # Dark mode toggle
+└── lib/                   # Utility functions and hooks
+```
+
+## Customization
+
+- Update your personal information in the respective page components
+- Modify the color scheme in `tailwind.config.js`
+- Add or remove projects in the projects array
+- Customize animations in the Framer Motion components
+
+## Deployment
+
+The site can be easily deployed on [Vercel](https://vercel.com/):
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+
+## Contributing
+
+Feel free to open issues and pull requests for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
