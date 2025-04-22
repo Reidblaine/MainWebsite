@@ -32,7 +32,7 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Hello, I'm Reid Blaine
+                Hello, I&apos;m Reid Blaine
               </h2>
               <p className="text-gray-600 dark:text-gray-300">
                 I&apos;m a passionate software developer with a strong focus on creating elegant and efficient solutions. 
