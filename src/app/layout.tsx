@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { Providers } from '@/components/Providers'
 import './globals.css'
 import CursorTrail from '@/components/CursorTrail'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Providers>
           <CursorTrail />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
