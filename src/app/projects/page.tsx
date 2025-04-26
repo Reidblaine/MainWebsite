@@ -19,7 +19,7 @@ export default function Projects() {
         <div className="flex flex-col items-center justify-center py-12">
           <div className="relative w-full max-w-lg h-80 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/IMG_0454.jpg"
+              src="/IceCream.jpg"
               alt="Project in Scotland"
               fill
               className="object-cover"

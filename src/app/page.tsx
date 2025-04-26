@@ -68,7 +68,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 h-full transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded">
                 <Image
-                  src="/IMG_0454.jpg"
+                  src="/IceCream.jpg"
                   alt="Projects"
                   fill
                   className="object-cover"
