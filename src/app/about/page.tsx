@@ -21,9 +21,9 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Profile Image */}
           <div className="flex flex-col gap-8">
-            <div className="relative h-96 w-full hover-trail" data-images="/snow.jpg">
+            <div className="relative h-96 w-full hover-trail" data-images="/Snow.jpg">
               <Image
-                src="/snow.jpg"
+                src="/Snow.jpg"
                 alt="Reid Blaine in snow"
                 fill
                 className="object-cover rounded-lg shadow-xl"
@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div className="relative h-96 w-full">
               <Image
-                src="/view.jpg"
+                src="/View.jpg"
                 alt="View"
                 fill
                 className="object-cover rounded-lg shadow-xl"
