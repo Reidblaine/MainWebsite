@@ -1,5 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
+import Image from 'next/image'
+import { Mail, Phone, Linkedin } from 'lucide-react'
 
 export default function CV() {
   return (
@@ -7,30 +9,60 @@ export default function CV() {
       <Navigation />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-12">
         {/* Header */}
-        <div className="text-center space-y-2">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Reid Blaine</h1>
-          <p className="text-gray-600 dark:text-gray-300">
-            Hood River, Oregon | +44 7951 680937 | +1 (248) 897-0413 |{' '}
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+            CV / Resume
+          </h1>
+          <div className="flex justify-center gap-4 flex-wrap">
             <a
               href="mailto:reidgorham@gmail.com"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
-              reidgorham@gmail.com
-            </a>{' '}
-            |{' '}
+              <Mail className="w-5 h-5 mr-2" />
+              Email
+            </a>
+            <a
+              href="tel:+447951680937"
+              className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <Phone className="w-5 h-5 mr-2" />
+              UK Phone
+            </a>
+            <a
+              href="tel:+12488970413"
+              className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <Phone className="w-5 h-5 mr-2" />
+              US Phone
+            </a>
             <a
               href="https://www.linkedin.com/in/reidblaine"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+              className="inline-flex items-center px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors"
             >
-              linkedin.com/in/reidblaine
+              <Linkedin className="w-5 h-5 mr-2" />
+              LinkedIn
             </a>
-          </p>
+          </div>
+        </div>
+
+        {/* Profile Image Section */}
+        <div className="w-full flex justify-center">
+          <div className="relative w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden shadow-xl mx-auto">
+            <Image
+              src="/Profile.jpeg"
+              alt="Professional profile"
+              fill
+              className="object-contain object-center rounded-2xl"
+              sizes="(max-width: 768px) 90vw, 400px"
+              priority
+            />
+          </div>
         </div>
 
         {/* Education Section */}
-        <section>
+        <section className="transition-transform duration-500 hover:translate-x-2">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Education</h2>
           <div className="space-y-6">
             <div>
@@ -56,7 +88,7 @@ export default function CV() {
         </section>
 
         {/* Finance Experience */}
-        <section>
+        <section className="transition-transform duration-500 hover:translate-x-2">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Finance Experience</h2>
           <div className="space-y-8">
             <div>
@@ -103,8 +135,8 @@ export default function CV() {
         </section>
 
         {/* Other Work Experience */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-900 mb-4">Other Work Experience</h2>
+        <section className="transition-transform duration-500 hover:translate-x-2">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Other Work Experience</h2>
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -129,7 +161,7 @@ export default function CV() {
         </section>
 
         {/* Volunteering */}
-        <section>
+        <section className="transition-transform duration-500 hover:translate-x-2">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Volunteering</h2>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
             <li>Friends of the Columbia River Gorge (2020): Participated in native vegetation restoration and fundraising for trail maintenance.</li>
@@ -137,7 +169,7 @@ export default function CV() {
         </section>
 
         {/* Skills, Activities, and Interests */}
-        <section>
+        <section className="transition-transform duration-500 hover:translate-x-2">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Skills, Activities, & Interests</h2>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
             <li><strong>Financial Software & Analysis:</strong> Excel & STATA for regression analysis, forecasting, and financial modelling.</li>

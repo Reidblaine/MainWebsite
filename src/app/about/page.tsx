@@ -20,14 +20,24 @@ export default function About() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Profile Image */}
-          <div className="relative h-96 w-full hover-trail" data-images="/Santa.jpg">
-            <Image
-              src="/Santa.jpg"
-              alt="Reid Blaine"
-              fill
-              className="object-cover rounded-lg shadow-xl"
-              priority
-            />
+          <div className="flex flex-col gap-8">
+            <div className="relative h-96 w-full hover-trail" data-images="/snow.jpg">
+              <Image
+                src="/snow.jpg"
+                alt="Reid Blaine in snow"
+                fill
+                className="object-cover rounded-lg shadow-xl"
+                priority
+              />
+            </div>
+            <div className="relative h-96 w-full">
+              <Image
+                src="/view.jpg"
+                alt="View"
+                fill
+                className="object-cover rounded-lg shadow-xl"
+              />
+            </div>
           </div>
 
           {/* Bio */}
@@ -37,9 +47,11 @@ export default function About() {
                 Hello, I&#39;m Reid Blaine
               </h2>
               <p className="text-gray-600 dark:text-gray-300">
-                I&#39;m a passionate software developer with a strong focus on creating elegant and efficient solutions. 
-                With a background in computer science and years of experience in web development, I strive to build 
-                applications that not only look great but also provide exceptional user experiences.
+                I&#39;m from rural Oregon, where I grew up working on an apple and pear farm. That experience gave me an early 
+                appreciation for how <strong>systems in the physical world — like agriculture and natural resources — intersect 
+                with broader economic forces</strong>. I&#39;ve always been curious about how the world works, and that curiosity 
+                eventually led me to pursue a <strong>Master of Arts in Financial Economics</strong> in Scotland, where I&#39;m 
+                now finishing my degree.
               </p>
             </div>
 
@@ -48,9 +60,12 @@ export default function About() {
                 My Journey
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                My journey in software development began during my university years, where I discovered my passion 
-                for creating digital solutions. Since then, I&#39;ve worked on various projects ranging from small 
-                business websites to complex web applications, constantly learning and adapting to new technologies.
+                Growing up in a farming community taught me the importance of hard work, adaptability, and understanding the 
+                tangible side of life — weather patterns, supply chains, soil quality. But I&#39;ve also been drawn to the 
+                <strong> structures that govern how economies operate</strong>, from commodity markets to international finance. 
+                Studying Financial Economics in Scotland gave me the tools to think critically about these systems and their 
+                impact on people and the planet. Along the way, I&#39;ve also enjoyed <strong>traveling</strong>, picking up 
+                <strong> bits of new languages</strong>, and seeing how different regions approach the same global challenges.
               </p>
             </div>
 
@@ -59,11 +74,11 @@ export default function About() {
                 Interests & Hobbies
               </h3>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
-                <li>Open source contributions</li>
-                <li>Learning new programming languages and frameworks</li>
-                <li>Photography and digital art</li>
-                <li>Hiking and outdoor activities</li>
-                <li>Reading science fiction and technical books</li>
+                <li>Following global economic trends and financial policy</li>
+                <li>Reading history, political economy, and economic theory</li>
+                <li>Strength training and scuba diving</li>
+                <li>Spending time outdoors, especially hiking and exploring new places</li>
+                <li>Learning about food systems, sustainability, and agri-tech</li>
               </ul>
             </div>
 
@@ -72,11 +87,11 @@ export default function About() {
                 Values
               </h3>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
-                <li>Continuous learning and improvement</li>
-                <li>Clean and maintainable code</li>
-                <li>User-centered design</li>
-                <li>Collaboration and knowledge sharing</li>
-                <li>Problem-solving and innovation</li>
+                <li>Honesty and direct communication</li>
+                <li>Clarity of thought and expression</li>
+                <li>Respect for people's lived experiences</li>
+                <li>Intellectual curiosity grounded in real-world context</li>
+                <li>Integrity in how I work and how I treat others</li>
               </ul>
             </div>
           </div>
